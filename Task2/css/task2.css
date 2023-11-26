@@ -1,0 +1,80 @@
+body {
+    font-family: 'Georgia';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background:
+    url(https://images.unsplash.com/photo-1554034483-04fda0d3507b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHNvbGlkJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D)
+    center / cover no-repeat fixed;
+}
+
+#converter {
+    border: 1px solid rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+.heading{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.temp-icon{
+    width: 30px;
+    height: 30px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Georgia';
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
