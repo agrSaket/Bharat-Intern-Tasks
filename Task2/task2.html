@@ -8,35 +8,42 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-    <div id="converter">
-        <div class="heading">
-            <img src="./img/high-temperature.png" alt="temperature" class="temp-icon"></img>
-            <h2>Temperature Converter</h2>
+    <div class="container">
+        <div id="converter">
+            <div class="heading">
+                <img src="./img/high-temperature.png" alt="temperature" class="temp-icon"></img>
+                <h2>Temperature Converter</h2>
+            </div>
+
+            <label for="fromUnit">From:</label>
+            <select id="fromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature" step="0.1">
+
+            <label for="toUnit">To:</label>
+            <select id="toUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <div class="btns">
+                <button onclick="convert()">Convert</button>
+                <button onclick="swapUnits()">Swap</button>
+            </div>
+
+            <p id="result">Result:</p>
         </div>
 
-        <label for="fromUnit">From:</label>
-        <select id="fromUnit">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
-
-        <label for="temperature">Temperature:</label>
-        <input type="number" id="temperature" placeholder="Enter temperature" step="0.1">
-
-        <label for="toUnit">To:</label>
-        <select id="toUnit">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-            <option value="kelvin">Kelvin</option>
-        </select>
-
-        <div class="btns">
-            <button onclick="convert()">Convert</button>
-            <button onclick="swapUnits()">Swap</button>
+        <div id="explanationSection" style="display: none;">
+            <h3>Explanation</h3>
+            <p id="explanationText"></p>
         </div>
-
-        <p id="result">Result:</p>
     </div>
 
     <script src="js/task2.js"></script>
